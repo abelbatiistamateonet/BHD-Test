@@ -1,0 +1,50 @@
+*{
+    margin: 5px 5px 5px 15px;
+    padding: 0px;
+}
+
+.container{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: left;
+    position: fixed;
+    right: 0;
+    width: 80%;
+    height: 80%;
+}
+
+th {
+    float: left;
+    color: #52B848;
+}
+
+table {
+    background-color: #F8F4F4;
+    width: 40%;
+    text-align: center;
+    height: 400px;
+}
+
+input{
+    border: 1px solid #52B848;
+    background-color: #fff;
+    height: 35px;
+    width: 70%;
+    padding-left: 40px;
+}
+
+button{
+    width: 38%;
+    height: 35px;
+}
+
+.button-green{
+    background-color: #52B848;
+    color: #fff;
+    border: 1px solid #52B848;
+}
+
+.normal-botton{
+    background-color: #fff;
+    color: #52B848;
+    border: 1px solid #52B848;
+}

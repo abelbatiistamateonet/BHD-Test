@@ -1,0 +1,40 @@
+<div class="container">
+    <div>
+        <h1>Mantenimiento comentarios</h1>
+    </div>
+    <div>
+        <div>
+            <table>
+                <tr>
+                    <th>
+                        Nuevo comentario
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input [(ngModel)]="comment!.name" placeholder="Nombre">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input [(ngModel)]="comment!.email" placeholder="Correo Electronico">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input [(ngModel)]="comment!.website" placeholder="Pagina Web">
+                    </td>
+                </tr>
+                <tr rowspan="4">
+                    <td>
+                        <input [(ngModel)]="comment!.content" placeholder="Comentarios">
+                    </td>
+                </tr>
+                <tr>
+                    <button type="button" class="normal-botton" (click)="goBack()">Cancelar</button>
+                    <button type="button" class="button-green" (click)="save()">Guardar</button>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

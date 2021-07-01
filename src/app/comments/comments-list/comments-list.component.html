@@ -1,0 +1,39 @@
+<div class="container">
+    <div>
+        <h1>Comentarios</h1>
+    </div>
+    <div>
+        <span>{{ commentsCount }} comentarios registrados</span>
+    </div>
+    <div>
+        <i></i>
+        <input type="text" placeholder="Buscar comentario">
+    </div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID:</th>
+                    <th>Nombre:</th>
+                    <th>Correo Electronico:</th>
+                    <th>Pagina Web</th>
+                    <th>Comentarios</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let comment of comments">
+                    <td>{{ comment.id }}</td>
+                    <td>{{ comment.name }}</td>
+                    <td>{{ comment.email }}</td>
+                    <td>{{ comment.website }}</td>
+                    <td>{{ comment.content }}</td>
+                    <td><a routerLink="/dashboard/updateComments/{{comment.id}}" href="/dashboard/updateComments/{{comment.id}}">Editar</a></td>
+                </tr>
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
+    </div>
+</div>

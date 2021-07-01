@@ -1,0 +1,40 @@
+<div class="container">
+    <div>
+        <h1>Mantenimiento comentarios</h1>
+    </div>
+    <div>
+        <div>
+            <table>
+                <tr>
+                    <th>
+                        Nuevo comentario
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input #commentName placeholder="Nombre">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input #commentEmail placeholder="Correo Electronico">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input #commentwebsite placeholder="Pagina Web">
+                    </td>
+                </tr>
+                <tr rowspan="4">
+                    <td>
+                        <input #commentContent placeholder="Comentarios">
+                    </td>
+                </tr>
+                <tr>
+                    <button type="button" class="normal-botton">Cancelar</button>
+                    <button type="button" class="button-green" (click)="add(commentName.value, commentEmail.value, commentwebsite.value, commentContent.value); commentName.value=''; commentEmail.value=''; commentwebsite.value=''; commentContent.value='';">Guardar</button>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

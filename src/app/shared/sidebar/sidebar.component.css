@@ -1,0 +1,36 @@
+div {
+    width: 20%;
+    position: fixed;
+    left: 0;
+    border: 3px solid #73AD21;
+    padding: 0px;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    background-color: #52B848;
+    height: 100%;
+    overflow: auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.sidebar a {
+    text-align: center;
+    display: block;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: rgb(178, 224, 169);
+    color: white;
+}
